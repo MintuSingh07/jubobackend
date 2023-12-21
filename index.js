@@ -5,7 +5,7 @@ const cors = require('cors');
 
 dotenv.config();
 
-const mongoURL = process.env.MONGODB;
+const mongoURL = process.env.MONGODB || "mongodb+srv://Mintu3344:Mintu3344@cluster0.tgx9fmn.mongodb.net/questions?retryWrites=true&w=majority";
 
 const app = express();
 
