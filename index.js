@@ -24,6 +24,10 @@ const questionSchema = new Schema({
         type: String,
         required: true,
     },
+    topic: {
+        type: String,
+        required: true,
+    }
 });
 const QuestionModel = mongoose.model('questionModel', questionSchema, 'questions');
 
